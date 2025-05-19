@@ -6,10 +6,11 @@
       "mobile": "./waffle/image-waffle-mobile.jpg",
       "tablet": "./waffle/image-waffle-tablet.jpg",
       "desktop": "./waffle/image-waffle-desktop.jpg"
+
     },
-    "name": "Waffle with Berries",
-    "type": "Waffle",
-    "price": 650
+    "productName": "Waffle with Berries",
+    "productType": "Waffle",
+    "productPrice": 650
   },
   {
     "id": 2,
@@ -19,21 +20,21 @@
       "tablet": "./creme_brulee/image-creme-brulee-tablet.jpg",
       "desktop": "./creme_brulee/image-creme-brulee-desktop.jpg"
     },
-    "name": "Vanila Bean Crème Brûlée",
-    "type": "Crème Brûlée",
-    "price": 700
+    "productName": "Vanila Bean Crème Brûlée",
+    "productType": "Crème Brûlée",
+    "productPrice": 700
   },
   {
     "id": 3,
     "image": {
       "thumbnail": "./macaron/image-macaron-thumbnail.jpg",
       "mobile": "./macaron/image-macaron-mobile.jpg",
-      "tablet": "./maracon/waffle/image-macaron-tablet.jpg",
-      "desktop": "./macaron/waffle/image-macaron-desktop.jpg"
+      "tablet": "./macaron/image-macaron-tablet.jpg",
+      "desktop": "./macaron/image-macaron-desktop.jpg"
     },
-    "name": "Macaron Mix of Five",
-    "type": "Macaron",
-    "price": 800
+    "productName": "Macaron Mix of Five",
+    "productType": "Macaron",
+    "productPrice": 800
   },
   {
     "id": 4,
@@ -43,9 +44,9 @@
       "tablet": "./tiramisu/image-tiramisu-tablet.jpg",
       "desktop": "./tiramisu/image-tiramisu-desktop.jpg"
     },
-    "name": "Classic Tiramisu",
-    "type": "Tiramisu",
-    "price": 550
+    "productName": "Classic Tiramisu",
+    "productType": "Tiramisu",
+    "productPrice": 550
   },
   {
     "id": 5,
@@ -55,9 +56,9 @@
       "tablet": "./baklava/image-baklava-tablet.jpg",
       "desktop": "./baklava/image-baklava-desktop.jpg"
     },
-    "name": "Pistachio Baklava",
-    "type": "Baklava",
-    "price": 400
+    "productName": "Pistachio Baklava",
+    "productType": "Baklava",
+    "productPrice": 400
   },
   {
     "id": 6,
@@ -67,9 +68,9 @@
       "tablet": "./pie/image-meringue-tablet.jpg",
       "desktop": "./pie/image-meringue-desktop.jpg"
     },
-    "name": "Lemon Meringue Pie",
-    "type": "Pie",
-    "price": 500
+    "productName": "Lemon Meringue Pie",
+    "productType": "Pie",
+    "productPrice": 500
   },
   {
     "id": 7,
@@ -79,9 +80,9 @@
       "tablet": "./cake/image-cake-tablet.jpg",
       "desktop": "./cake/image-cake-desktop.jpg"
     },
-    "name": "Red Velvet Cake",
-    "type": "Cake",
-    "price": 450
+    "productName": "Red Velvet Cake",
+    "productType": "Cake",
+    "productPrice": 450
   },
   {
     "id": 8,
@@ -91,9 +92,9 @@
       "tablet": "./brownie/image-brownie-tablet.jpg",
       "desktop": "./brownie/image-brownie-desktop.jpg"
     },
-    "name": "Salted Caramel Brownie",
-    "type": "Brownie",
-    "price": 550
+    "productName": "Salted Caramel Brownie",
+    "productType": "Brownie",
+    "productPrice": 550
   },
   {
     "id": 9,
@@ -103,8 +104,8 @@
       "tablet": "./panna_cotta/image-panna-cotta-tablet.jpg",
       "desktop": "./panna_cotta/image-panna-cotta-desktop.jpg"
     },
-    "name": "Vanilla Panna Cotta",
-    "type": "Panna Cotta",
-    "price": 650
+    "productName": "Vanilla Panna Cotta",
+    "productType": "Panna Cotta",
+    "productPrice": 650
   }
 ]

@@ -1,29 +1,42 @@
-import { Product } from "../product/product";
+import "./product-cart.scss";
 
 interface ProductCartProps {
-  id: number;
   name: string;
   price: number;
   amount: number;
+  image: {
+    thumbnail: string;
+    mobile: string;
+    tablet: string;
+    desktop: string;
+  };
+  onRemove: () => void;
+  onUpdateQuantity: (newQuantity: number) => void;
 }
 
-export function ProductCart({id, name, price, amount }: ProductCartProps) {
-  const handleRemoveFromCart = (id: number) => {};
+export function ProductCart({ name, price, amount, image, onRemove, onUpdateQuantity }: ProductCartProps) {
   return (
-    <>
-      <ul>
-        <li>
+    <ul>
+      <li>
+        <div className="product-info">
+          <img src={image?.thumbnail} alt={name} className="product-thumbnail" />
           <span>{name}</span>
-          <div>
+        </div>
+        <div className="quantity-price">
+          <div className="quantity-controls">
+            <button onClick={() => onUpdateQuantity(amount - 1)}>-</button>
             <span>{amount}</span>
-            <span>@ ${price}</span>
-            <span>$ {price * amount}</span>
+            <button onClick={() => onUpdateQuantity(amount + 1)}>+</button>
           </div>
-          <a onClick={() => handleRemoveFromCart(id)}>
-            <img src="icon-remove-item.svg" alt="Remove Item" />
-          </a>
-        </li>
-      </ul>
-    </>
+          <div className="price-info">
+            <span className="unit-price">@ ${price}</span>
+            <span className="total-price">$ {(price * amount).toFixed(2)}</span>
+          </div>
+        </div>
+        <button onClick={onRemove} className="remove-button">
+          <img src="icon-remove-item.svg" alt="Remove Item" />
+        </button>
+      </li>
+    </ul>
   );
 }

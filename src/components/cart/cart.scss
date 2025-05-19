@@ -3,43 +3,84 @@
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
-  border-radius: 12px;
-  width: 270px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 430px;
   height: auto;
-  grid-area: "cart";
-
+  max-height: 600px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
   h2 {
-    padding-top: 15px;
-    padding-left: 20px; 
+    padding: 20px;
     color: var(--btn-secondary);
     font-weight: 700;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 16px 16px 0 0;
+
+    span {
+      color: var(--text-primary);
+      font-size: 18px;
+    }
   }
 
   .emptyCartDetail {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+
+    img {
+      width: 120px;
+      height: auto;
+      margin-bottom: 16px;
+    }
 
     p {
       font-weight: 600;
-      font-size: 12px;
+      font-size: 16px;
       color: var(--text-secondary);
+      text-align: center;
+      line-height: 1.5;
     }
   }
 
-
-  @media (width>=768px) and (width<1400px) {
-    width: 570px;
-    margin: 0;
+  .cart-items {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 20px 100px;
   }
 
-  @media (width>=1400px) {
-    width: 300px;
-    height: 300px;
-    margin-left: 30px;
+  .cart-total {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+
+    span:first-child {
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    span:last-child {
+      color: var(--text-price);
+      font-weight: 700;
+      font-size: 20px;
+    }
   }
 }
