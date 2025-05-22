@@ -10,6 +10,11 @@
     font-weight: 700;
     font-size: 24px;
     margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+      font-size: 20px;
+      margin-bottom: 16px;
+    }
   }
 
   .list-grid {
@@ -17,15 +22,20 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 20px;
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
   }
 
-  @media (width >= 768px) {
+  @media (min-width: 768px) {
     h1 {
       font-size: 28px;
     }
   }
 
-  @media (width >= 1400px) {
+  @media (min-width: 1400px) {
     h1 {
       font-size: 32px;
     }
